@@ -6,7 +6,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data;
 using System.Threading.Tasks;
-using DTO_CM;
+using DTO;
 namespace DAO
 {
     public class DAO_COLOR

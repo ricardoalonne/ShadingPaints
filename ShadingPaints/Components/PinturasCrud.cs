@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using DTO_CM;
+using DTO;
 using CTR;
 
 namespace ShadingPaints.Components
