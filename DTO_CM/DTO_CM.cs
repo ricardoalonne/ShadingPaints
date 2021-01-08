@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO_CM
 {
-    class DTO_CM
+    public class DTO_CM
     {
         public int ID_COLOR { get; set; }
         public int ID_MES { get; set; }

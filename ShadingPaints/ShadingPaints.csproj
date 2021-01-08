@@ -121,6 +121,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CTR\CTR.csproj">
+      <Project>{2174954c-b533-47e6-bf16-daea47dcc573}</Project>
+      <Name>CTR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_CM\DTO.csproj">
+      <Project>{1cbe2332-0394-4580-b517-99fdd809b932}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

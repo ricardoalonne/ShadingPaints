@@ -13,7 +13,7 @@ namespace DAO
             get
             {
 
-                return "Data Source=DESKTOP-B0AHBET\\SQLEXPRESS; Initial Catalog = PINTURAS; Integrated Security = True";
+                return "Data Source=(Local); Initial Catalog = PINTURAS; Integrated Security = True";
 
             }
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO_CM
 {
-    class DTO_MES
+    public class DTO_MES
     {
         public int ID_MES { get; set; }
         public string MES { get; set; }

@@ -43,12 +43,17 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="CTR_CM.cs" />
+    <Compile Include="CTR_COLOR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{7200ef8d-7836-487f-8d61-fd33a2cdaf1a}</Project>
       <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_CM\DTO.csproj">
+      <Project>{1cbe2332-0394-4580-b517-99fdd809b932}</Project>
+      <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

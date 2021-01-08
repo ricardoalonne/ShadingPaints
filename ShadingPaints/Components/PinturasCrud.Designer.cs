@@ -45,8 +45,8 @@ namespace ShadingPaints.Components
             this.Button_CargarExcelBD = new System.Windows.Forms.Button();
             this.DataGridView_VistaPrincipal = new System.Windows.Forms.DataGridView();
             this.Panel_Busqueda = new System.Windows.Forms.Panel();
-            this.searchBarColor1 = new SearchBarColor();
             this.Button_NuevaSolicitud = new System.Windows.Forms.Button();
+            this.searchBarColor1 = new SearchBarColor();
             this.Panel_TablaContenido.SuspendLayout();
             this.FlowLayoutPanel_Acciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_VistaPrincipal)).BeginInit();
@@ -175,6 +175,7 @@ namespace ShadingPaints.Components
             this.Button_GuardarCambios.Size = new System.Drawing.Size(42, 36);
             this.Button_GuardarCambios.TabIndex = 7;
             this.Button_GuardarCambios.UseVisualStyleBackColor = false;
+            this.Button_GuardarCambios.Click += new System.EventHandler(this.Button_GuardarCambios_Click);
             // 
             // Button_ExportarExcelDB
             // 
@@ -262,18 +263,6 @@ namespace ShadingPaints.Components
             this.Panel_Busqueda.Size = new System.Drawing.Size(800, 40);
             this.Panel_Busqueda.TabIndex = 8;
             // 
-            // searchBarColor1
-            // 
-            this.searchBarColor1.AutoComplete = null;
-            this.searchBarColor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.searchBarColor1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBarColor1.Location = new System.Drawing.Point(0, 0);
-            this.searchBarColor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.searchBarColor1.MessageSearchBox = "Buscar en el sistema e internet.";
-            this.searchBarColor1.Name = "searchBarColor1";
-            this.searchBarColor1.Size = new System.Drawing.Size(661, 40);
-            this.searchBarColor1.TabIndex = 5;
-            // 
             // Button_NuevaSolicitud
             // 
             this.Button_NuevaSolicitud.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -292,6 +281,18 @@ namespace ShadingPaints.Components
             this.Button_NuevaSolicitud.Text = "Nuevo Color";
             this.Button_NuevaSolicitud.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Button_NuevaSolicitud.UseVisualStyleBackColor = false;
+            // 
+            // searchBarColor1
+            // 
+            this.searchBarColor1.AutoComplete = null;
+            this.searchBarColor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.searchBarColor1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBarColor1.Location = new System.Drawing.Point(0, 0);
+            this.searchBarColor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.searchBarColor1.MessageSearchBox = "Buscar en el sistema e internet.";
+            this.searchBarColor1.Name = "searchBarColor1";
+            this.searchBarColor1.Size = new System.Drawing.Size(661, 40);
+            this.searchBarColor1.TabIndex = 5;
             // 
             // PinturasCrud
             // 
