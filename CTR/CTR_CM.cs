@@ -19,6 +19,18 @@ namespace CTR
         {
             return objDAO_CM.SelectDemandaXColorYMes();
         }
-            
+        public DataTable CTR_SelectBanderaXColorYMes()
+        {
+            return objDAO_CM.SelectBanderaXColorYMes();
+        }
+        public DataTable CTR_SelectInventarioXColorYMes()
+        {
+            return objDAO_CM.SelectInventarioXColorYMes();
+        }
+
+        public DataTable CTR_SelectProduccionXColorYMes()
+        {
+            return objDAO_CM.SelectProduccionXColorYMes();
+        }
     }
 }
