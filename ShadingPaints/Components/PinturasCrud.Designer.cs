@@ -42,10 +42,9 @@ namespace ShadingPaints.Components
             this.Button_RefrescarTabla = new System.Windows.Forms.Button();
             this.Button_GuardarCambios = new System.Windows.Forms.Button();
             this.Button_ExportarExcelDB = new System.Windows.Forms.Button();
-            this.Button_CargarExcelBD = new System.Windows.Forms.Button();
             this.DataGridView_VistaPrincipal = new System.Windows.Forms.DataGridView();
             this.Panel_Busqueda = new System.Windows.Forms.Panel();
-            this.searchBarColor1 = new SearchBarColor();
+        
             this.Button_NuevaSolicitud = new System.Windows.Forms.Button();
             this.Panel_TablaContenido.SuspendLayout();
             this.FlowLayoutPanel_Acciones.SuspendLayout();
@@ -73,7 +72,6 @@ namespace ShadingPaints.Components
             this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_RefrescarTabla);
             this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_GuardarCambios);
             this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_ExportarExcelDB);
-            this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_CargarExcelBD);
             this.FlowLayoutPanel_Acciones.Dock = System.Windows.Forms.DockStyle.Right;
             this.FlowLayoutPanel_Acciones.Location = new System.Drawing.Point(750, 0);
             this.FlowLayoutPanel_Acciones.Margin = new System.Windows.Forms.Padding(0);
@@ -193,23 +191,6 @@ namespace ShadingPaints.Components
             this.Button_ExportarExcelDB.TabIndex = 8;
             this.Button_ExportarExcelDB.UseVisualStyleBackColor = false;
             // 
-            // Button_CargarExcelBD
-            // 
-            this.Button_CargarExcelBD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button_CargarExcelBD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_CargarExcelBD.FlatAppearance.BorderSize = 0;
-            this.Button_CargarExcelBD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_CargarExcelBD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_CargarExcelBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_CargarExcelBD.Image = ((System.Drawing.Image)(resources.GetObject("Button_CargarExcelBD.Image")));
-            this.Button_CargarExcelBD.Location = new System.Drawing.Point(4, 240);
-            this.Button_CargarExcelBD.Margin = new System.Windows.Forms.Padding(4, 1, 4, 3);
-            this.Button_CargarExcelBD.Name = "Button_CargarExcelBD";
-            this.Button_CargarExcelBD.Size = new System.Drawing.Size(42, 36);
-            this.Button_CargarExcelBD.TabIndex = 5;
-            this.Button_CargarExcelBD.UseVisualStyleBackColor = false;
-            // 
             // DataGridView_VistaPrincipal
             // 
             this.DataGridView_VistaPrincipal.AllowUserToResizeRows = false;
@@ -243,6 +224,7 @@ namespace ShadingPaints.Components
             this.DataGridView_VistaPrincipal.Location = new System.Drawing.Point(5, 5);
             this.DataGridView_VistaPrincipal.Name = "DataGridView_VistaPrincipal";
             this.DataGridView_VistaPrincipal.RowHeadersVisible = false;
+            this.DataGridView_VistaPrincipal.RowHeadersWidth = 51;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(0)))));
@@ -254,7 +236,7 @@ namespace ShadingPaints.Components
             // 
             // Panel_Busqueda
             // 
-            this.Panel_Busqueda.Controls.Add(this.searchBarColor1);
+           
             this.Panel_Busqueda.Controls.Add(this.Button_NuevaSolicitud);
             this.Panel_Busqueda.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Busqueda.Location = new System.Drawing.Point(0, 0);
@@ -264,15 +246,8 @@ namespace ShadingPaints.Components
             // 
             // searchBarColor1
             // 
-            this.searchBarColor1.AutoComplete = null;
-            this.searchBarColor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.searchBarColor1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBarColor1.Location = new System.Drawing.Point(0, 0);
-            this.searchBarColor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.searchBarColor1.MessageSearchBox = "Buscar en el sistema e internet.";
-            this.searchBarColor1.Name = "searchBarColor1";
-            this.searchBarColor1.Size = new System.Drawing.Size(661, 40);
-            this.searchBarColor1.TabIndex = 5;
+           
+        
             // 
             // Button_NuevaSolicitud
             // 
@@ -295,7 +270,7 @@ namespace ShadingPaints.Components
             // 
             // PinturasCrud
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Panel_TablaContenido);
             this.Controls.Add(this.Panel_Busqueda);
@@ -323,10 +298,9 @@ namespace ShadingPaints.Components
         private System.Windows.Forms.Button Button_RefrescarTabla;
         private System.Windows.Forms.Button Button_GuardarCambios;
         private System.Windows.Forms.Button Button_ExportarExcelDB;
-        private System.Windows.Forms.Button Button_CargarExcelBD;
         private System.Windows.Forms.DataGridView DataGridView_VistaPrincipal;
         private System.Windows.Forms.Panel Panel_Busqueda;
         private System.Windows.Forms.Button Button_NuevaSolicitud;
-        private SearchBarColor searchBarColor1;
+       
     }
 }

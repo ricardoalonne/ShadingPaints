@@ -13,7 +13,7 @@ namespace ShadingPaints.Components
 {
     public partial class EstadisticasPinturas : UserControl
     {
-        public EstadisticasPinturas() => InitializeComponent();
+        public EstadisticasPinturas() => InitializeComponent(); CTR_CM objCTR_CM = new CTR_CM();
 
         private void EstadisticasPinturas_Load(object sender, EventArgs e){
             vistaDemanda = true;
@@ -21,26 +21,27 @@ namespace ShadingPaints.Components
 
         private void RadioButton_Demanda_CheckedChanged(object sender, EventArgs e) => VistaDemanda = RadioButton_Demanda.Checked;
 
-        private void RadioButton_Bandera_CheckedChanged(object sender, EventArgs e) => VistaBandera = RadioButton_Bandera.Checked;
+        private void RadioButton_Bandera_CheckedChanged(object sender, EventArgs e) => VistaBandera = RadioButton_Bandera.Checked; 
+
 
         private void RadioButton_Produccion_CheckedChanged(object sender, EventArgs e) => VistaProduccion = RadioButton_Produccion.Checked;
 
         private void RadioButton_Inventario_CheckedChanged(object sender, EventArgs e) => VistaInventario = RadioButton_Inventario.Checked;
 
         private void Button_RefrescarTabla_Click(object sender, EventArgs e){
-            if(vistaDemanda) //CargarvistaDemanda
-            if(vistaBandera) //CargarvistaBandera
-            if(vistaProduccion) //CargarvistaProduccion
-            if(vistaInventario) //CargarvistaInventario
+            if(vistaDemanda)
+            if (vistaBandera) 
+            if (vistaProduccion) //CargarvistaProduccion
+            if(vistaInventario) 
             DataGridView_VistaPrincipal.Refresh();
         }
 
         private bool vistaDemanda = false, vistaBandera = false, vistaProduccion = false, vistaInventario = false;
         public bool VistaDemanda {
-            get => vistaDemanda;
-            set{
+            get => vistaDemanda; 
+            set{               
                 vistaDemanda = value;
-
+                DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectDemandaXColorYMes();
             }
 
         }
@@ -51,7 +52,7 @@ namespace ShadingPaints.Components
             set
             {
                 vistaBandera = value;
-
+                DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectBanderaXColorYMes();
             }
 
         }
@@ -62,7 +63,7 @@ namespace ShadingPaints.Components
             set
             {
                 vistaProduccion = value;
-
+                DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectProduccionXColorYMes();
             }
 
         }
@@ -73,20 +74,11 @@ namespace ShadingPaints.Components
             set
             {
                 vistaInventario = value;
-
+                DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectInventarioXColorYMes();
             }
 
-        CTR_CM objCTR_CM;
-        public EstadisticasPinturas()
-        {
-            InitializeComponent();
-            objCTR_CM = new CTR_CM();
         }
 
-        private void btnDemanda_CheckedChanged(object sender, EventArgs e)
-        {
-            DataGridView_VistaPrincipal.DataSource= objCTR_CM.CTR_SelectDemandaXColorYMes();
-        }
 
 
     }

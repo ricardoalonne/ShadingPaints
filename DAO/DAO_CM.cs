@@ -38,7 +38,60 @@ namespace DAO
                 throw ex;
             }
         }
-
+        public DataTable SelectBanderaXColorYMes()
+        {
+            try
+            {
+                conexion.Open();
+                DataTable dtable = new DataTable();
+                SqlCommand cmd = new SqlCommand("SP_SelectBanderaXColorYMes", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dtable);
+                conexion.Close();
+                return dtable;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public DataTable SelectInventarioXColorYMes()
+        {
+            try
+            {
+                conexion.Open();
+                DataTable dtable = new DataTable();
+                SqlCommand cmd = new SqlCommand("SP_SelectInventarioXColorYMes", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dtable);
+                conexion.Close();
+                return dtable;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public DataTable SelectProduccionXColorYMes()
+        {
+            try
+            {
+                conexion.Open();
+                DataTable dtable = new DataTable();
+                SqlCommand cmd = new SqlCommand("SP_SelectProduccionXColorYMes", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dtable);
+                conexion.Close();
+                return dtable;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public void Insert_Color(DTO_COLOR objDTOColor)
         {
             conexion.Open();         
