@@ -23,6 +23,8 @@ namespace ShadingPaints
             DatosPintura dp = new DatosPintura();
             dp.Modo = "R";
             Application.Run(dp);
+
+
         }
     }
 }

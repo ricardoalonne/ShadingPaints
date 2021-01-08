@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTO_CM
+namespace DTO
 {
-    class DTO_COLOR
+    public class DTO_COLOR
     {
         public int ID_COLOR { get; set; }
         public string COLOR { get; set; }
