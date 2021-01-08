@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using ShadingPaints.Views;
+
 namespace ShadingPaints
 {
     static class Program
@@ -16,7 +18,11 @@ namespace ShadingPaints
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ShadingPaints());
+            //Application.Run(new ShadingPaints());
+
+            DatosPintura dp = new DatosPintura();
+            dp.Modo = "R";
+            Application.Run(dp);
         }
     }
 }

@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using ShadingPaints.Components;
-
-namespace ShadingPaints
+namespace ShadingPaints.Components
 {
-    public partial class ShadingPaints : Form
+    public partial class EstadisticasPinturas : UserControl
     {
-        public ShadingPaints()
+        public EstadisticasPinturas()
         {
             InitializeComponent();
-        }
-        public void LoadGrid()
-        {
-
         }
     }
 }
