@@ -18,11 +18,13 @@ namespace ShadingPaints
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new ShadingPaints());
-
+            Application.Run(new ShadingPaints());
+            /*
             DatosPintura dp = new DatosPintura();
-            dp.Modo = "R";
+            dp.CodigoPintura = datas;
+            dp.Modo = "M";
             Application.Run(dp);
+            */
         }
     }
 }

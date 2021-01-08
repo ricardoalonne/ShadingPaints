@@ -30,13 +30,13 @@ namespace ShadingPaints.Components
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EstadisticasPinturas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.RadioButton_Principal = new System.Windows.Forms.RadioButton();
-            this.RadioButton_Abastecimiento = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.RadioButton_Demanda = new System.Windows.Forms.RadioButton();
+            this.RadioButton_Bandera = new System.Windows.Forms.RadioButton();
+            this.RadioButton_Inventario = new System.Windows.Forms.RadioButton();
+            this.RadioButton_Produccion = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Panel_TablaContenido = new System.Windows.Forms.Panel();
             this.FlowLayoutPanel_Acciones = new System.Windows.Forms.FlowLayoutPanel();
@@ -50,95 +50,99 @@ namespace ShadingPaints.Components
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_VistaPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
-            // RadioButton_Principal
+            // RadioButton_Demanda
             // 
-            this.RadioButton_Principal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RadioButton_Demanda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RadioButton_Principal.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RadioButton_Principal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RadioButton_Principal.Checked = true;
-            this.RadioButton_Principal.FlatAppearance.BorderSize = 0;
-            this.RadioButton_Principal.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RadioButton_Principal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RadioButton_Principal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RadioButton_Principal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RadioButton_Principal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RadioButton_Principal.Location = new System.Drawing.Point(0, 0);
-            this.RadioButton_Principal.Margin = new System.Windows.Forms.Padding(0);
-            this.RadioButton_Principal.Name = "RadioButton_Principal";
-            this.RadioButton_Principal.Size = new System.Drawing.Size(200, 40);
-            this.RadioButton_Principal.TabIndex = 6;
-            this.RadioButton_Principal.TabStop = true;
-            this.RadioButton_Principal.Text = "Demanda";
-            this.RadioButton_Principal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.RadioButton_Principal.UseVisualStyleBackColor = false;
+            this.RadioButton_Demanda.Appearance = System.Windows.Forms.Appearance.Button;
+            this.RadioButton_Demanda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Demanda.Checked = true;
+            this.RadioButton_Demanda.FlatAppearance.BorderSize = 0;
+            this.RadioButton_Demanda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Demanda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Demanda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Demanda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RadioButton_Demanda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RadioButton_Demanda.Location = new System.Drawing.Point(0, 0);
+            this.RadioButton_Demanda.Margin = new System.Windows.Forms.Padding(0);
+            this.RadioButton_Demanda.Name = "RadioButton_Demanda";
+            this.RadioButton_Demanda.Size = new System.Drawing.Size(200, 40);
+            this.RadioButton_Demanda.TabIndex = 6;
+            this.RadioButton_Demanda.TabStop = true;
+            this.RadioButton_Demanda.Text = "Demanda";
+            this.RadioButton_Demanda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RadioButton_Demanda.UseVisualStyleBackColor = false;
+            this.RadioButton_Demanda.CheckedChanged += new System.EventHandler(this.RadioButton_Demanda_CheckedChanged);
             // 
-            // RadioButton_Abastecimiento
+            // RadioButton_Bandera
             // 
-            this.RadioButton_Abastecimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RadioButton_Bandera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RadioButton_Abastecimiento.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RadioButton_Abastecimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RadioButton_Abastecimiento.FlatAppearance.BorderSize = 0;
-            this.RadioButton_Abastecimiento.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RadioButton_Abastecimiento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RadioButton_Abastecimiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RadioButton_Abastecimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RadioButton_Abastecimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RadioButton_Abastecimiento.Location = new System.Drawing.Point(200, 0);
-            this.RadioButton_Abastecimiento.Margin = new System.Windows.Forms.Padding(0);
-            this.RadioButton_Abastecimiento.Name = "RadioButton_Abastecimiento";
-            this.RadioButton_Abastecimiento.Size = new System.Drawing.Size(200, 40);
-            this.RadioButton_Abastecimiento.TabIndex = 7;
-            this.RadioButton_Abastecimiento.Text = "Bandera";
-            this.RadioButton_Abastecimiento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.RadioButton_Abastecimiento.UseVisualStyleBackColor = false;
+            this.RadioButton_Bandera.Appearance = System.Windows.Forms.Appearance.Button;
+            this.RadioButton_Bandera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Bandera.FlatAppearance.BorderSize = 0;
+            this.RadioButton_Bandera.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Bandera.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Bandera.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Bandera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RadioButton_Bandera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RadioButton_Bandera.Location = new System.Drawing.Point(200, 0);
+            this.RadioButton_Bandera.Margin = new System.Windows.Forms.Padding(0);
+            this.RadioButton_Bandera.Name = "RadioButton_Bandera";
+            this.RadioButton_Bandera.Size = new System.Drawing.Size(200, 40);
+            this.RadioButton_Bandera.TabIndex = 7;
+            this.RadioButton_Bandera.Text = "Bandera";
+            this.RadioButton_Bandera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RadioButton_Bandera.UseVisualStyleBackColor = false;
+            this.RadioButton_Bandera.CheckedChanged += new System.EventHandler(this.RadioButton_Bandera_CheckedChanged);
             // 
-            // radioButton2
+            // RadioButton_Inventario
             // 
-            this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RadioButton_Inventario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.radioButton2.FlatAppearance.BorderSize = 0;
-            this.radioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.radioButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.radioButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radioButton2.Location = new System.Drawing.Point(600, 0);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(200, 40);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.Text = "Inventario";
-            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.RadioButton_Inventario.Appearance = System.Windows.Forms.Appearance.Button;
+            this.RadioButton_Inventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Inventario.FlatAppearance.BorderSize = 0;
+            this.RadioButton_Inventario.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Inventario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Inventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Inventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RadioButton_Inventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RadioButton_Inventario.Location = new System.Drawing.Point(600, 0);
+            this.RadioButton_Inventario.Margin = new System.Windows.Forms.Padding(0);
+            this.RadioButton_Inventario.Name = "RadioButton_Inventario";
+            this.RadioButton_Inventario.Size = new System.Drawing.Size(200, 40);
+            this.RadioButton_Inventario.TabIndex = 9;
+            this.RadioButton_Inventario.Text = "Inventario";
+            this.RadioButton_Inventario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RadioButton_Inventario.UseVisualStyleBackColor = false;
+            this.RadioButton_Inventario.CheckedChanged += new System.EventHandler(this.RadioButton_Inventario_CheckedChanged);
             // 
-            // radioButton1
+            // RadioButton_Produccion
             // 
-            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RadioButton_Produccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.radioButton1.FlatAppearance.BorderSize = 0;
-            this.radioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.radioButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.radioButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radioButton1.Location = new System.Drawing.Point(400, 0);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(200, 40);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.Text = "Producción";
-            this.radioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.RadioButton_Produccion.Appearance = System.Windows.Forms.Appearance.Button;
+            this.RadioButton_Produccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Produccion.FlatAppearance.BorderSize = 0;
+            this.RadioButton_Produccion.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Produccion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Produccion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RadioButton_Produccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RadioButton_Produccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RadioButton_Produccion.Location = new System.Drawing.Point(400, 0);
+            this.RadioButton_Produccion.Margin = new System.Windows.Forms.Padding(0);
+            this.RadioButton_Produccion.Name = "RadioButton_Produccion";
+            this.RadioButton_Produccion.Size = new System.Drawing.Size(200, 40);
+            this.RadioButton_Produccion.TabIndex = 8;
+            this.RadioButton_Produccion.Text = "Producción";
+            this.RadioButton_Produccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RadioButton_Produccion.UseVisualStyleBackColor = false;
+            this.RadioButton_Produccion.CheckedChanged += new System.EventHandler(this.RadioButton_Produccion_CheckedChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -147,10 +151,10 @@ namespace ShadingPaints.Components
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.radioButton2, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.RadioButton_Principal, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.radioButton1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.RadioButton_Abastecimiento, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RadioButton_Inventario, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RadioButton_Demanda, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RadioButton_Produccion, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RadioButton_Bandera, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -198,6 +202,7 @@ namespace ShadingPaints.Components
             this.Button_RefrescarTabla.Size = new System.Drawing.Size(42, 36);
             this.Button_RefrescarTabla.TabIndex = 6;
             this.Button_RefrescarTabla.UseVisualStyleBackColor = false;
+            this.Button_RefrescarTabla.Click += new System.EventHandler(this.Button_RefrescarTabla_Click);
             // 
             // Panel_Separator
             // 
@@ -236,34 +241,34 @@ namespace ShadingPaints.Components
             this.DataGridView_VistaPrincipal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.DataGridView_VistaPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView_VistaPrincipal.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView_VistaPrincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView_VistaPrincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.DataGridView_VistaPrincipal.ColumnHeadersHeight = 35;
             this.DataGridView_VistaPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_VistaPrincipal.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_VistaPrincipal.DefaultCellStyle = dataGridViewCellStyle14;
             this.DataGridView_VistaPrincipal.EnableHeadersVisualStyles = false;
             this.DataGridView_VistaPrincipal.GridColor = System.Drawing.Color.Silver;
             this.DataGridView_VistaPrincipal.Location = new System.Drawing.Point(5, 5);
             this.DataGridView_VistaPrincipal.Name = "DataGridView_VistaPrincipal";
             this.DataGridView_VistaPrincipal.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_VistaPrincipal.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_VistaPrincipal.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.DataGridView_VistaPrincipal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGridView_VistaPrincipal.Size = new System.Drawing.Size(740, 449);
             this.DataGridView_VistaPrincipal.TabIndex = 2;
@@ -279,6 +284,7 @@ namespace ShadingPaints.Components
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "EstadisticasPinturas";
             this.Size = new System.Drawing.Size(800, 500);
+            this.Load += new System.EventHandler(this.EstadisticasPinturas_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.Panel_TablaContenido.ResumeLayout(false);
             this.FlowLayoutPanel_Acciones.ResumeLayout(false);
@@ -289,10 +295,10 @@ namespace ShadingPaints.Components
 
         #endregion
 
-        private System.Windows.Forms.RadioButton RadioButton_Principal;
-        private System.Windows.Forms.RadioButton RadioButton_Abastecimiento;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton RadioButton_Demanda;
+        private System.Windows.Forms.RadioButton RadioButton_Bandera;
+        private System.Windows.Forms.RadioButton RadioButton_Inventario;
+        private System.Windows.Forms.RadioButton RadioButton_Produccion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel Panel_TablaContenido;
         private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanel_Acciones;
