@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CTR;
+using DTO;
 using PeinCoreWFA;
 
 namespace ShadingPaints.Components
@@ -31,29 +32,12 @@ namespace ShadingPaints.Components
 
         private void SearchBar_Load(object sender, EventArgs e) {
             controlController = new ControlController();
-            TextBox_Búsqueda.Text = messageSearchBox;
+            TextBox_Búsqueda.Text = messageSearchBox = "Buscar en los colores de pinturas";
+            LoadItemsFilter(new string[] { "Codigo", "Nombre", "Tiempo", "Costo"});
             SearchBoxInteractive();
         }
 
         private void Button_Buscar_Click(object sender, EventArgs e) => Search();
-
-        //---------------------------------------------------------------------------------------------
-        public string MessageSearchBox {
-            set {
-                messageSearchBox = value;
-                TextBox_Búsqueda.Text = messageSearchBox;
-            }
-            get => messageSearchBox;
-        }
-
-        public string SearchText{
-            get => TextBox_Búsqueda.Text;
-        }
-
-        public string FilterText{
-            get => ComboBox_Filtro.Text;
-        }
-
         //---------------------------------------------------------------------------------------------
 
         public void DataGridView(DataGridView dgv) => this.dgv = dgv;
@@ -101,9 +85,43 @@ namespace ShadingPaints.Components
 
         }
 
-        public virtual void Search() {
-        }
+        private string pintura;
+        DTO_COLOR color = new DTO_COLOR();
+        CTR_COLOR colorctr = new CTR_COLOR();
 
+        public virtual void Search() {
+            if (TextBox_Búsqueda.Text == "")
+            {
+                MessageBox.Show("ERROR!! ESPACIOS EN BLANCO!!");
+                return;
+            }
+            color.ID_COLOR = int.Parse(TextBox_Búsqueda.Text);
+            /*if (!colorctr.ExistenciaColor(color))
+            {
+                MessageBox.Show("ERROR!! Color INEXISTENTE!!");
+                return;
+            }*/
+            pintura = color.ID_COLOR.ToString();
+            //var listaConsultas = colorctr.ConsultarPinturas(FilterText, SearchText);
+            //dgv.DataSource = listaConsultas;
+        }
+        private string[] ConsultarEnColores(string filtro)
+        {
+            switch (filtro){
+                case "Codigo": filtro = "ID_COLOR"; break;
+                case "Nombre": filtro = "COLOR"; break;
+                case "Tiempo": filtro = "T"; break;
+                case "Costo": filtro = "CI"; break;
+                default: break;
+            }
+            List<string> result = new List<string>();
+            foreach (DataRow row in colorctr.ListarSColores().Rows)
+            {
+                result.Add(row[filtro].ToString());
+            }
+            result.RemoveAll(str => String.IsNullOrEmpty(str));
+            return result.ToArray();
+        }
 
         //-------------------------------------------------------------------------------------------------------
 
@@ -113,13 +131,14 @@ namespace ShadingPaints.Components
             get => autoComplete;
             set {
                 autoComplete = value;
-                if(autoComplete != null) controlController.AutoComplete(TextBox_Búsqueda, autoComplete);
+                if(autoComplete != null && controlController != null) controlController.AutoComplete(TextBox_Búsqueda, autoComplete);
             }
         }
 
-        public virtual void ComboBox_Filtro_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        public string Pintura() => pintura;
 
-        }
+        public virtual void ComboBox_Filtro_SelectedIndexChanged(object sender, EventArgs e) => AutoComplete = ConsultarEnColores(ComboBox_Filtro.Text);
+
+        
     }
 }

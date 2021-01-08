@@ -140,7 +140,7 @@ namespace ShadingPaints
             this.estadisticasPinturas1.TabIndex = 7;
             this.estadisticasPinturas1.Visible = false;
             this.estadisticasPinturas1.VistaBandera = false;
-            this.estadisticasPinturas1.VistaDemanda = false;
+            this.estadisticasPinturas1.VistaDemanda = true;
             this.estadisticasPinturas1.VistaInventario = false;
             this.estadisticasPinturas1.VistaProduccion = false;
             // 

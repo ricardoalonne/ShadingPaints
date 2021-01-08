@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Button_ModificarSolicitud.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Button_ModificarColor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABGdBTUEAALGPC/xhBQAAA6hJREFUSEvt
         VttLFGEUH53Z2bvrClFk0VOvXYgeJCJfewii6AJBPUSSkg/rzF5cNWfX1VIh8kWNoD/AFwmjiC7COjOu
@@ -139,7 +139,7 @@
         nqO3X4AroSBPNVa3ac1QEBJeGfHqWHFE/zA47ieJbXVcn+8zBQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Button_VerSolicitud.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Button_VerColor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABGdBTUEAALGPC/xhBQAAAcNJREFUSEvl
         1ssuA3EUx/GTiDXC1soLKC9QOzYknkTjBbyB97DCirp0VJrSRl0atxRDSBq3uFTFLY4vOcxMTWLTselJ
@@ -152,7 +152,7 @@
         dPF5TdxH7TVxFf5rYopes9Jp7RuiRD4AzWPTC8hs7H0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Button_EliminarSolicitud.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Button_EliminarColor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABGdBTUEAALGPC/xhBQAAA0lJREFUSEvl
         lstrU1EQxscXFQWtQhFURBTBjUUEMRvFhbqwuPEP6EZQqPovqHtd6ULEt1atz9b3o1Hb+gCl4MLHwo0g
@@ -258,7 +258,7 @@
         EqO5VvcX5kVpcYJGolaekqoVCw7WN3PvmUCL1YpC31OFhPwP08/3trr8zmIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Button_NuevaSolicitud.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Button_NuevoColor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABGdBTUEAALGPC/xhBQAAAsVJREFUSEvt
         Vl1LFGEUPu+sEBL1G/oF3UYEMVK2K265xrisNrvtWmkF3Ta38zPqNrrqrhJjE1lJdkXW0LRcS01EjUqK

@@ -17,6 +17,7 @@ namespace ShadingPaints.Components
 
         private void EstadisticasPinturas_Load(object sender, EventArgs e){
             vistaDemanda = true;
+            DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectDemandaXColorYMes();
         }
 
         private void RadioButton_Demanda_CheckedChanged(object sender, EventArgs e) => VistaDemanda = RadioButton_Demanda.Checked;
@@ -29,10 +30,10 @@ namespace ShadingPaints.Components
         private void RadioButton_Inventario_CheckedChanged(object sender, EventArgs e) => VistaInventario = RadioButton_Inventario.Checked;
 
         private void Button_RefrescarTabla_Click(object sender, EventArgs e){
-            if(vistaDemanda)
-            if (vistaBandera) 
-            if (vistaProduccion) //CargarvistaProduccion
-            if(vistaInventario) 
+            if(vistaDemanda) DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectDemandaXColorYMes();
+            if (vistaBandera) DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectBanderaXColorYMes();
+            if (vistaProduccion) DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectProduccionXColorYMes();
+            if (vistaInventario) DataGridView_VistaPrincipal.DataSource = objCTR_CM.CTR_SelectInventarioXColorYMes();
             DataGridView_VistaPrincipal.Refresh();
         }
 

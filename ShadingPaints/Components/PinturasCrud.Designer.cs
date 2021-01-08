@@ -35,9 +35,9 @@ namespace ShadingPaints.Components
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Panel_TablaContenido = new System.Windows.Forms.Panel();
             this.FlowLayoutPanel_Acciones = new System.Windows.Forms.FlowLayoutPanel();
-            this.Button_ModificarSolicitud = new System.Windows.Forms.Button();
-            this.Button_VerSolicitud = new System.Windows.Forms.Button();
-            this.Button_EliminarSolicitud = new System.Windows.Forms.Button();
+            this.Button_ModificarColor = new System.Windows.Forms.Button();
+            this.Button_VerColor = new System.Windows.Forms.Button();
+            this.Button_EliminarColor = new System.Windows.Forms.Button();
             this.Panel_Separator = new System.Windows.Forms.Panel();
             this.Button_RefrescarTabla = new System.Windows.Forms.Button();
             this.Button_GuardarCambios = new System.Windows.Forms.Button();
@@ -45,8 +45,8 @@ namespace ShadingPaints.Components
             this.Button_CargarExcelBD = new System.Windows.Forms.Button();
             this.DataGridView_VistaPrincipal = new System.Windows.Forms.DataGridView();
             this.Panel_Busqueda = new System.Windows.Forms.Panel();
-            this.Button_NuevaSolicitud = new System.Windows.Forms.Button();
             this.searchBarColor1 = new SearchBarColor();
+            this.Button_NuevoColor = new System.Windows.Forms.Button();
             this.Panel_TablaContenido.SuspendLayout();
             this.FlowLayoutPanel_Acciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_VistaPrincipal)).BeginInit();
@@ -66,9 +66,9 @@ namespace ShadingPaints.Components
             // FlowLayoutPanel_Acciones
             // 
             this.FlowLayoutPanel_Acciones.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_ModificarSolicitud);
-            this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_VerSolicitud);
-            this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_EliminarSolicitud);
+            this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_ModificarColor);
+            this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_VerColor);
+            this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_EliminarColor);
             this.FlowLayoutPanel_Acciones.Controls.Add(this.Panel_Separator);
             this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_RefrescarTabla);
             this.FlowLayoutPanel_Acciones.Controls.Add(this.Button_GuardarCambios);
@@ -81,56 +81,59 @@ namespace ShadingPaints.Components
             this.FlowLayoutPanel_Acciones.Size = new System.Drawing.Size(50, 460);
             this.FlowLayoutPanel_Acciones.TabIndex = 9;
             // 
-            // Button_ModificarSolicitud
+            // Button_ModificarColor
             // 
-            this.Button_ModificarSolicitud.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Button_ModificarColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button_ModificarSolicitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_ModificarSolicitud.FlatAppearance.BorderSize = 0;
-            this.Button_ModificarSolicitud.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_ModificarSolicitud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_ModificarSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_ModificarSolicitud.Image = ((System.Drawing.Image)(resources.GetObject("Button_ModificarSolicitud.Image")));
-            this.Button_ModificarSolicitud.Location = new System.Drawing.Point(4, 3);
-            this.Button_ModificarSolicitud.Margin = new System.Windows.Forms.Padding(4, 3, 4, 1);
-            this.Button_ModificarSolicitud.Name = "Button_ModificarSolicitud";
-            this.Button_ModificarSolicitud.Size = new System.Drawing.Size(42, 36);
-            this.Button_ModificarSolicitud.TabIndex = 5;
-            this.Button_ModificarSolicitud.UseVisualStyleBackColor = false;
+            this.Button_ModificarColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_ModificarColor.FlatAppearance.BorderSize = 0;
+            this.Button_ModificarColor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_ModificarColor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_ModificarColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_ModificarColor.Image = ((System.Drawing.Image)(resources.GetObject("Button_ModificarColor.Image")));
+            this.Button_ModificarColor.Location = new System.Drawing.Point(4, 3);
+            this.Button_ModificarColor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 1);
+            this.Button_ModificarColor.Name = "Button_ModificarColor";
+            this.Button_ModificarColor.Size = new System.Drawing.Size(42, 36);
+            this.Button_ModificarColor.TabIndex = 5;
+            this.Button_ModificarColor.UseVisualStyleBackColor = false;
+            this.Button_ModificarColor.Click += new System.EventHandler(this.Button_ModificarColor_Click);
             // 
-            // Button_VerSolicitud
+            // Button_VerColor
             // 
-            this.Button_VerSolicitud.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Button_VerColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button_VerSolicitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_VerSolicitud.FlatAppearance.BorderSize = 0;
-            this.Button_VerSolicitud.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_VerSolicitud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_VerSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_VerSolicitud.Image = ((System.Drawing.Image)(resources.GetObject("Button_VerSolicitud.Image")));
-            this.Button_VerSolicitud.Location = new System.Drawing.Point(4, 41);
-            this.Button_VerSolicitud.Margin = new System.Windows.Forms.Padding(4, 1, 4, 1);
-            this.Button_VerSolicitud.Name = "Button_VerSolicitud";
-            this.Button_VerSolicitud.Size = new System.Drawing.Size(42, 36);
-            this.Button_VerSolicitud.TabIndex = 6;
-            this.Button_VerSolicitud.UseVisualStyleBackColor = false;
+            this.Button_VerColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_VerColor.FlatAppearance.BorderSize = 0;
+            this.Button_VerColor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_VerColor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_VerColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_VerColor.Image = ((System.Drawing.Image)(resources.GetObject("Button_VerColor.Image")));
+            this.Button_VerColor.Location = new System.Drawing.Point(4, 41);
+            this.Button_VerColor.Margin = new System.Windows.Forms.Padding(4, 1, 4, 1);
+            this.Button_VerColor.Name = "Button_VerColor";
+            this.Button_VerColor.Size = new System.Drawing.Size(42, 36);
+            this.Button_VerColor.TabIndex = 6;
+            this.Button_VerColor.UseVisualStyleBackColor = false;
+            this.Button_VerColor.Click += new System.EventHandler(this.Button_VerColor_Click);
             // 
-            // Button_EliminarSolicitud
+            // Button_EliminarColor
             // 
-            this.Button_EliminarSolicitud.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Button_EliminarColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button_EliminarSolicitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_EliminarSolicitud.FlatAppearance.BorderSize = 0;
-            this.Button_EliminarSolicitud.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_EliminarSolicitud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_EliminarSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_EliminarSolicitud.Image = ((System.Drawing.Image)(resources.GetObject("Button_EliminarSolicitud.Image")));
-            this.Button_EliminarSolicitud.Location = new System.Drawing.Point(4, 79);
-            this.Button_EliminarSolicitud.Margin = new System.Windows.Forms.Padding(4, 1, 4, 1);
-            this.Button_EliminarSolicitud.Name = "Button_EliminarSolicitud";
-            this.Button_EliminarSolicitud.Size = new System.Drawing.Size(42, 36);
-            this.Button_EliminarSolicitud.TabIndex = 6;
-            this.Button_EliminarSolicitud.UseVisualStyleBackColor = false;
+            this.Button_EliminarColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_EliminarColor.FlatAppearance.BorderSize = 0;
+            this.Button_EliminarColor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_EliminarColor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_EliminarColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_EliminarColor.Image = ((System.Drawing.Image)(resources.GetObject("Button_EliminarColor.Image")));
+            this.Button_EliminarColor.Location = new System.Drawing.Point(4, 79);
+            this.Button_EliminarColor.Margin = new System.Windows.Forms.Padding(4, 1, 4, 1);
+            this.Button_EliminarColor.Name = "Button_EliminarColor";
+            this.Button_EliminarColor.Size = new System.Drawing.Size(42, 36);
+            this.Button_EliminarColor.TabIndex = 6;
+            this.Button_EliminarColor.UseVisualStyleBackColor = false;
+            this.Button_EliminarColor.Click += new System.EventHandler(this.Button_EliminarColor_Click);
             // 
             // Panel_Separator
             // 
@@ -158,6 +161,7 @@ namespace ShadingPaints.Components
             this.Button_RefrescarTabla.Size = new System.Drawing.Size(42, 36);
             this.Button_RefrescarTabla.TabIndex = 6;
             this.Button_RefrescarTabla.UseVisualStyleBackColor = false;
+            this.Button_RefrescarTabla.Click += new System.EventHandler(this.Button_RefrescarTabla_Click);
             // 
             // Button_GuardarCambios
             // 
@@ -256,43 +260,57 @@ namespace ShadingPaints.Components
             // Panel_Busqueda
             // 
             this.Panel_Busqueda.Controls.Add(this.searchBarColor1);
-            this.Panel_Busqueda.Controls.Add(this.Button_NuevaSolicitud);
+            this.Panel_Busqueda.Controls.Add(this.Button_NuevoColor);
             this.Panel_Busqueda.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Busqueda.Location = new System.Drawing.Point(0, 0);
             this.Panel_Busqueda.Name = "Panel_Busqueda";
             this.Panel_Busqueda.Size = new System.Drawing.Size(800, 40);
             this.Panel_Busqueda.TabIndex = 8;
             // 
-            // Button_NuevaSolicitud
-            // 
-            this.Button_NuevaSolicitud.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button_NuevaSolicitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_NuevaSolicitud.FlatAppearance.BorderSize = 0;
-            this.Button_NuevaSolicitud.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_NuevaSolicitud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_NuevaSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_NuevaSolicitud.Image = ((System.Drawing.Image)(resources.GetObject("Button_NuevaSolicitud.Image")));
-            this.Button_NuevaSolicitud.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_NuevaSolicitud.Location = new System.Drawing.Point(667, 3);
-            this.Button_NuevaSolicitud.Name = "Button_NuevaSolicitud";
-            this.Button_NuevaSolicitud.Size = new System.Drawing.Size(129, 33);
-            this.Button_NuevaSolicitud.TabIndex = 4;
-            this.Button_NuevaSolicitud.Text = "Nuevo Color";
-            this.Button_NuevaSolicitud.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Button_NuevaSolicitud.UseVisualStyleBackColor = false;
-            // 
             // searchBarColor1
             // 
-            this.searchBarColor1.AutoComplete = null;
+            this.searchBarColor1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchBarColor1.AutoComplete = new string[] {
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"};
             this.searchBarColor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.searchBarColor1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBarColor1.Location = new System.Drawing.Point(0, 0);
             this.searchBarColor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.searchBarColor1.MessageSearchBox = "Buscar en el sistema e internet.";
             this.searchBarColor1.Name = "searchBarColor1";
             this.searchBarColor1.Size = new System.Drawing.Size(661, 40);
             this.searchBarColor1.TabIndex = 5;
+            // 
+            // Button_NuevoColor
+            // 
+            this.Button_NuevoColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Button_NuevoColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_NuevoColor.FlatAppearance.BorderSize = 0;
+            this.Button_NuevoColor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_NuevoColor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_NuevoColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_NuevoColor.Image = ((System.Drawing.Image)(resources.GetObject("Button_NuevoColor.Image")));
+            this.Button_NuevoColor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_NuevoColor.Location = new System.Drawing.Point(667, 3);
+            this.Button_NuevoColor.Name = "Button_NuevoColor";
+            this.Button_NuevoColor.Size = new System.Drawing.Size(129, 33);
+            this.Button_NuevoColor.TabIndex = 4;
+            this.Button_NuevoColor.Text = "Nuevo Color";
+            this.Button_NuevoColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Button_NuevoColor.UseVisualStyleBackColor = false;
+            this.Button_NuevoColor.Click += new System.EventHandler(this.Button_NuevoColor_Click);
             // 
             // PinturasCrud
             // 
@@ -305,6 +323,7 @@ namespace ShadingPaints.Components
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "PinturasCrud";
             this.Size = new System.Drawing.Size(800, 500);
+            this.Load += new System.EventHandler(this.PinturasCrud_Load);
             this.Panel_TablaContenido.ResumeLayout(false);
             this.FlowLayoutPanel_Acciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_VistaPrincipal)).EndInit();
@@ -317,9 +336,9 @@ namespace ShadingPaints.Components
 
         private System.Windows.Forms.Panel Panel_TablaContenido;
         private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanel_Acciones;
-        private System.Windows.Forms.Button Button_ModificarSolicitud;
-        private System.Windows.Forms.Button Button_VerSolicitud;
-        private System.Windows.Forms.Button Button_EliminarSolicitud;
+        private System.Windows.Forms.Button Button_ModificarColor;
+        private System.Windows.Forms.Button Button_VerColor;
+        private System.Windows.Forms.Button Button_EliminarColor;
         private System.Windows.Forms.Panel Panel_Separator;
         private System.Windows.Forms.Button Button_RefrescarTabla;
         private System.Windows.Forms.Button Button_GuardarCambios;
@@ -327,7 +346,7 @@ namespace ShadingPaints.Components
         private System.Windows.Forms.Button Button_CargarExcelBD;
         private System.Windows.Forms.DataGridView DataGridView_VistaPrincipal;
         private System.Windows.Forms.Panel Panel_Busqueda;
-        private System.Windows.Forms.Button Button_NuevaSolicitud;
+        private System.Windows.Forms.Button Button_NuevoColor;
         private SearchBarColor searchBarColor1;
     }
 }

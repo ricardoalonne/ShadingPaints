@@ -10,22 +10,57 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using DTO;
 using CTR;
+using ShadingPaints.Views;
 
 namespace ShadingPaints.Components
 {
-    public partial class PinturasCrud : UserControl
-    {
+    public partial class PinturasCrud : UserControl{
         public PinturasCrud()
         {
             InitializeComponent();
-            CargarListaColor_T_CI();
+            
         }
         DTO_COLOR color = new DTO_COLOR();
         CTR_COLOR colorctr = new CTR_COLOR();
+        DatosPintura datosPintura;
+
+        private void PinturasCrud_Load(object sender, EventArgs e){
+            CargarListaColor_T_CI();
+            searchBarColor1.DataGridView(DataGridView_VistaPrincipal);
+        }
+
         private void CargarListaColor_T_CI()
         {
             DataGridView_VistaPrincipal.DataSource = colorctr.ListarSColores();
             DataGridView_VistaPrincipal.Columns[0].ReadOnly = true;
+        }
+
+        private void Button_NuevoColor_Click(object sender, EventArgs e){
+            datosPintura = new DatosPintura();
+            datosPintura.Modo = "R";
+            datosPintura.ShowDialog();
+        }
+
+        private void Button_VerColor_Click(object sender, EventArgs e){
+            DataGridView_VistaPrincipal.Select();
+            string codigoPintura = DataGridView_VistaPrincipal.CurrentRow.Cells["ID_COLOR"].Value.ToString();
+            datosPintura = new DatosPintura();
+            datosPintura.CodigoPintura(codigoPintura);
+            datosPintura.Modo = "V";
+            datosPintura.ShowDialog();
+        }
+
+        private void Button_ModificarColor_Click(object sender, EventArgs e){
+            DataGridView_VistaPrincipal.Select();
+            string codigoPintura = DataGridView_VistaPrincipal.CurrentRow.Cells["ID_COLOR"].Value.ToString();
+            datosPintura = new DatosPintura();
+            datosPintura.CodigoPintura(codigoPintura);
+            datosPintura.Modo = "M";
+            datosPintura.ShowDialog();
+        }
+
+        private void Button_EliminarColor_Click(object sender, EventArgs e){
+
         }
 
         private void Button_GuardarCambios_Click(object sender, EventArgs e)
@@ -77,6 +112,12 @@ namespace ShadingPaints.Components
             msj(color);
             CargarListaColor_T_CI();
         }
+
+        private void Button_RefrescarTabla_Click(object sender, EventArgs e){
+            CargarListaColor_T_CI();
+            DataGridView_VistaPrincipal.Refresh();
+        }
+
         public void msj(DTO_COLOR p)
         {
             switch (p.error)
@@ -99,5 +140,7 @@ namespace ShadingPaints.Components
                     break;
             }
         }
+
+        
     }
 }
