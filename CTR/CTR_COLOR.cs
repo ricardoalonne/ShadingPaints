@@ -62,5 +62,10 @@ namespace CTR
             objcolor.error = 88;
             objcolorDAO.GuardarCambiosTablaColor(objcolor);
         }
+
+        public DataTable ObtenerIDColor()
+        {
+            return objcolorDAO.ObtenerIDColor();
+        }
     }
 }

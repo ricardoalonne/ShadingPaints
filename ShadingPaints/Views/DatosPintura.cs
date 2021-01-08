@@ -114,6 +114,7 @@ namespace ShadingPaints.Views
                             this.Text = Label_Titulo.Text = "Nueva Pintura";
                             PTextBox_NombreColor.Enabled = PSpinnerBox_CostoInventario.Enabled = PSpinnerBox_Tiempo.Enabled = Button_Continuar.Visible = true;
                             Button_Continuar.Text = "Registrar";
+                            PTextBox_Codigo.Text = Obtener_ID_Color().ToString();
                         } break;
                     case "M": {
                             this.Text = Label_Titulo.Text = "Modificar Pintura";
@@ -133,6 +134,13 @@ namespace ShadingPaints.Views
             
             }
         }
-
+        public int Obtener_ID_Color()
+        {
+            int idColor = 0;
+            DataTable dtColor = new DataTable();
+            dtColor = colorctr.ObtenerIDColor();
+            //DataRow row = dtColor.NewRow();
+            return idColor = int.Parse(dtColor.Rows[0]["ID_COLOR"].ToString())+1;
+        }
     }
 }

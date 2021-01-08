@@ -47,5 +47,16 @@ namespace DAO
             command.ExecuteNonQuery();
             conexion.Close();
         }
+        public DataTable ObtenerIDColor()
+        {
+            DataTable dt = null;
+            conexion.Open();
+            SqlCommand command = new SqlCommand("SP_SelectIDColor", conexion);
+            SqlDataAdapter daAdaptador = new SqlDataAdapter(command);
+            dt = new DataTable();
+            daAdaptador.Fill(dt);
+            conexion.Close();
+            return dt;
+        }
     }
 }
