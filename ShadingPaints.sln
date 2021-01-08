@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadingPaints", "ShadingPaints\ShadingPaints.csproj", "{0F124D84-7FAF-4220-84C5-9BB828E3992C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO_CM\DTO.csproj", "{1CBE2332-0394-4580-B517-99FDD809B932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{7200EF8D-7836-487F-8D61-FD33A2CDAF1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTR", "CTR\CTR.csproj", "{2174954C-B533-47E6-BF16-DAEA47DCC573}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F124D84-7FAF-4220-84C5-9BB828E3992C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F124D84-7FAF-4220-84C5-9BB828E3992C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F124D84-7FAF-4220-84C5-9BB828E3992C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F124D84-7FAF-4220-84C5-9BB828E3992C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CBE2332-0394-4580-B517-99FDD809B932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CBE2332-0394-4580-B517-99FDD809B932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CBE2332-0394-4580-B517-99FDD809B932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CBE2332-0394-4580-B517-99FDD809B932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7200EF8D-7836-487F-8D61-FD33A2CDAF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7200EF8D-7836-487F-8D61-FD33A2CDAF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7200EF8D-7836-487F-8D61-FD33A2CDAF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7200EF8D-7836-487F-8D61-FD33A2CDAF1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2174954C-B533-47E6-BF16-DAEA47DCC573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2174954C-B533-47E6-BF16-DAEA47DCC573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2174954C-B533-47E6-BF16-DAEA47DCC573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2174954C-B533-47E6-BF16-DAEA47DCC573}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {646C52EF-664C-4CE6-A0FC-AF66592E88B6}
+	EndGlobalSection
+EndGlobal
