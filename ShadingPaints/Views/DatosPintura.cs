@@ -28,6 +28,9 @@ namespace ShadingPaints.Views
                 }
         }
 
+        private string codigoPintura;
+        public void CodigoPintura(string codigoPintura) => this.codigoPintura = codigoPintura;
+
         private string modo;
         public string Modo{
             get => modo;
@@ -49,6 +52,7 @@ namespace ShadingPaints.Views
                             this.Text = Label_Titulo.Text = "Ver detalles de Pintura";
                             PTextBox_NombreColor.Enabled = PSpinnerBox_CostoInventario.Enabled = PSpinnerBox_Tiempo.Enabled = false;
                             Button_Continuar.Visible = false;
+
                         }
                         break;
                     default: break;
@@ -56,5 +60,6 @@ namespace ShadingPaints.Views
             
             }
         }
+
     }
 }

@@ -34,9 +34,9 @@ namespace ShadingPaints
             this.RadioButton_Pinturas = new System.Windows.Forms.RadioButton();
             this.RadioButton_Estadisticas = new System.Windows.Forms.RadioButton();
             this.RadioButton_Configuracion = new System.Windows.Forms.RadioButton();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.estadisticasPinturas1 = new EstadisticasPinturas();
             this.pinturasCrud1 = new PinturasCrud();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,12 +57,13 @@ namespace ShadingPaints
             this.RadioButton_Pinturas.Location = new System.Drawing.Point(0, 0);
             this.RadioButton_Pinturas.Margin = new System.Windows.Forms.Padding(0);
             this.RadioButton_Pinturas.Name = "RadioButton_Pinturas";
-            this.RadioButton_Pinturas.Size = new System.Drawing.Size(406, 35);
+            this.RadioButton_Pinturas.Size = new System.Drawing.Size(328, 35);
             this.RadioButton_Pinturas.TabIndex = 4;
             this.RadioButton_Pinturas.TabStop = true;
             this.RadioButton_Pinturas.Text = "Pinturas";
             this.RadioButton_Pinturas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RadioButton_Pinturas.UseVisualStyleBackColor = false;
+            this.RadioButton_Pinturas.CheckedChanged += new System.EventHandler(this.RadioButton_Pinturas_CheckedChanged);
             // 
             // RadioButton_Estadisticas
             // 
@@ -76,14 +77,15 @@ namespace ShadingPaints
             this.RadioButton_Estadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.RadioButton_Estadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RadioButton_Estadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RadioButton_Estadisticas.Location = new System.Drawing.Point(406, 0);
+            this.RadioButton_Estadisticas.Location = new System.Drawing.Point(328, 0);
             this.RadioButton_Estadisticas.Margin = new System.Windows.Forms.Padding(0);
             this.RadioButton_Estadisticas.Name = "RadioButton_Estadisticas";
-            this.RadioButton_Estadisticas.Size = new System.Drawing.Size(406, 35);
+            this.RadioButton_Estadisticas.Size = new System.Drawing.Size(328, 35);
             this.RadioButton_Estadisticas.TabIndex = 5;
             this.RadioButton_Estadisticas.Text = "Estadísticas";
             this.RadioButton_Estadisticas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RadioButton_Estadisticas.UseVisualStyleBackColor = false;
+            this.RadioButton_Estadisticas.CheckedChanged += new System.EventHandler(this.RadioButton_Estadisticas_CheckedChanged);
             // 
             // RadioButton_Configuracion
             // 
@@ -97,42 +99,15 @@ namespace ShadingPaints
             this.RadioButton_Configuracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.RadioButton_Configuracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RadioButton_Configuracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RadioButton_Configuracion.Location = new System.Drawing.Point(812, 0);
+            this.RadioButton_Configuracion.Location = new System.Drawing.Point(656, 0);
             this.RadioButton_Configuracion.Margin = new System.Windows.Forms.Padding(0);
             this.RadioButton_Configuracion.Name = "RadioButton_Configuracion";
-            this.RadioButton_Configuracion.Size = new System.Drawing.Size(407, 35);
+            this.RadioButton_Configuracion.Size = new System.Drawing.Size(328, 35);
             this.RadioButton_Configuracion.TabIndex = 7;
             this.RadioButton_Configuracion.Text = "Configuración";
             this.RadioButton_Configuracion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RadioButton_Configuracion.UseVisualStyleBackColor = false;
-            // 
-            // estadisticasPinturas1
-            // 
-            this.estadisticasPinturas1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.estadisticasPinturas1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estadisticasPinturas1.Location = new System.Drawing.Point(0, 39);
-            this.estadisticasPinturas1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.estadisticasPinturas1.MinimumSize = new System.Drawing.Size(800, 500);
-            this.estadisticasPinturas1.Name = "estadisticasPinturas1";
-            this.estadisticasPinturas1.Size = new System.Drawing.Size(981, 520);
-            this.estadisticasPinturas1.TabIndex = 7;
-            this.estadisticasPinturas1.Visible = false;
-            // 
-            // pinturasCrud1
-            // 
-            this.pinturasCrud1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pinturasCrud1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pinturasCrud1.Location = new System.Drawing.Point(3, 39);
-            this.pinturasCrud1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pinturasCrud1.MinimumSize = new System.Drawing.Size(800, 500);
-            this.pinturasCrud1.Name = "pinturasCrud1";
-            this.pinturasCrud1.Size = new System.Drawing.Size(978, 520);
-            this.pinturasCrud1.TabIndex = 8;
-            this.pinturasCrud1.Visible = false;
+            this.RadioButton_Configuracion.CheckedChanged += new System.EventHandler(this.RadioButton_Configuracion_CheckedChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -148,8 +123,40 @@ namespace ShadingPaints
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1219, 35);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(984, 35);
             this.tableLayoutPanel1.TabIndex = 9;
+            // 
+            // estadisticasPinturas1
+            // 
+            this.estadisticasPinturas1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.estadisticasPinturas1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estadisticasPinturas1.Location = new System.Drawing.Point(0, 39);
+            this.estadisticasPinturas1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.estadisticasPinturas1.MinimumSize = new System.Drawing.Size(800, 500);
+            this.estadisticasPinturas1.Name = "estadisticasPinturas1";
+            this.estadisticasPinturas1.Size = new System.Drawing.Size(981, 520);
+            this.estadisticasPinturas1.TabIndex = 7;
+            this.estadisticasPinturas1.Visible = false;
+            this.estadisticasPinturas1.VistaBandera = false;
+            this.estadisticasPinturas1.VistaDemanda = false;
+            this.estadisticasPinturas1.VistaInventario = false;
+            this.estadisticasPinturas1.VistaProduccion = false;
+            // 
+            // pinturasCrud1
+            // 
+            this.pinturasCrud1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pinturasCrud1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pinturasCrud1.Location = new System.Drawing.Point(3, 39);
+            this.pinturasCrud1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pinturasCrud1.MinimumSize = new System.Drawing.Size(800, 500);
+            this.pinturasCrud1.Name = "pinturasCrud1";
+            this.pinturasCrud1.Size = new System.Drawing.Size(978, 520);
+            this.pinturasCrud1.TabIndex = 8;
+            this.pinturasCrud1.Visible = false;
             // 
             // ShadingPaints
             // 
@@ -164,6 +171,7 @@ namespace ShadingPaints
             this.Name = "ShadingPaints";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shading Paints";
+            this.Load += new System.EventHandler(this.ShadingPaints_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
